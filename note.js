@@ -144,9 +144,8 @@ search.addEventListener("input", () => {
 })
 
 let clearSearchBtn = document.getElementById("clearSearchBtn")
-clearSearchBtn.addEventListener("click", (e) => {
+clearSearchBtn.addEventListener("click", () => {
   search.value = ""
-  e.preventDefault()
 })
 
 
