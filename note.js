@@ -122,6 +122,7 @@ allClearButton.addEventListener("click",() => {
     db = []
     saveInLocalStore()
     readNotes()
+    search.value = ""
 })
 
 
@@ -140,6 +141,12 @@ search.addEventListener("input", () => {
             element.style.display = "none"
         }
     })
+})
+
+let clearSearchBtn = document.getElementById("clearSearchBtn")
+clearSearchBtn.addEventListener("click", (e) => {
+  search.value = ""
+  e.preventDefault()
 })
 
 
